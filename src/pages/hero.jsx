@@ -1,8 +1,7 @@
 import React, { useRef } from 'react'
-import herocam from "../assets/hero cam7.jpg"
-import Navbar from '../components/Navbar'
+import herocam from "../assets/heroimg.jpg"
+import logo from "../assets/Lensroom-1.png"
 import { motion, useTransform, useViewportScroll } from "framer-motion";
-import { useScroll } from 'framer-motion';
 
 const Hero = () => {
   const { scrollYProgress } = useViewportScroll()
@@ -14,15 +13,13 @@ const Hero = () => {
           
         <motion.img
            style={{ scale }}
-        
          src={herocam} alt="" className='h-[100vh] w-[100vw] object-cover absolute' />
     
-     <div className='text-slate-50 relative text-center pt-40 md:pt-40 lg:pt-60'>
-     <h1 className='md:text-6xl text-4xl font-semibold sans  p-3'>Your Partner in</h1>
-     <h1 className='md:text-6xl text-4xl font-semibold sans p-3'>Devleloping Your Ideas</h1>
-     <p className='md:text-xl text-lg p-2'>We will consult,analyze and find the best solutions so we<br/> can deliver you the perfect product!</p>
-     <button className='md:text-xl font-semibold bg-slate-100 hover:bg-orange-500 hover:text-slate-50 duration-300 text-slate-800 md:px-5 px-3 py-1 md:py-2 rounded-full hover:shadow-xl hover:shadow-slate-500'>Book Online</button>
-     <p className='md:text-3xl text-lg text-slate-100 font-extrabold mt-8 md:mt-16 '>|| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;| &nbsp;&nbsp;||&nbsp;&nbsp;||&nbsp;&nbsp;|</p>
+     <div className='text-slate-50 flex flex-col  relative text-center items-center pt-40 md:pt-40 lg:pt-60'>
+      <img src={logo} alt="" className='h-[5vh] md:h-[10vh] mt-10 ' />
+     <p className='md:text-4xl text-lg p-2  mt-5 font-extralight tracking-wide font-[Poppins]'>NEXT-GENERATION PHOTOGRAPHY SERVICE</p>
+     <button className='md:text-xl font-semibold bg-slate-100 mt-5  md:mt-10 hover:bg-orange-500 hover:text-slate-50 duration-300 text-slate-800 md:px-5 px-3 py-1 md:py-2 rounded-full hover:shadow-xl hover:shadow-slate-500'>Book Online</button>
+     <p className='md:text-3xl text-lg text-slate-100 font-extrabold mt-28 md:mt-24 '>|| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;| &nbsp;&nbsp;||&nbsp;&nbsp;||&nbsp;&nbsp;|</p>
      </div>
     </div>
     

@@ -37,7 +37,7 @@ const Aboutus = () => {
             viewport={{ once: true, amount: 0 }}
             className="lg:text-9xl md:text-7xl  text-5xl  text-left font-semibold"
           >
-             Light- 
+             Lens- 
       
           </motion.h1>
           <motion.h1

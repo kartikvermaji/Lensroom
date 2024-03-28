@@ -6,15 +6,15 @@ const Page2 = () => {
   const { scrollYProgress } = useViewportScroll();
   const scale = useTransform(scrollYProgress, [0, 1], [0.2, 1.1]);
   return (
-    <div id="contact"  className="bg-slate-950  text-slate-50 pt-20 md:space-x-5 l flex justify-around md:pt-10 md:p-3  lg:p-20 h-[90vh] md:h-[120vh]">
+    <div  id="contact" className="bg-slate-950  text-slate-50 pt-20 md:space-x-5 l flex justify-around md:pt-10 md:p-3  lg:p-20 h-[90vh] md:h-[120vh]">
       <div>
         <motion.img
-      initial={{ opacity: 0, scale: 0.4,y:100 }}
+      initial={{ opacity: 0, scale:0.6,y:100 }}
       whileInView={{
         opacity: 1,
         scale: 1,
         y:0,
-        transition: { delay: 0, duration: 1 },
+        transition: { delay: 0, duration:.5 },
       }}
       viewport={{ once:true, amount: 0.5 }}
           src={ps}

@@ -1,12 +1,13 @@
 import React from "react";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { faInstagram,faFacebook,faXTwitter,faGoogle} from '@fortawesome/free-brands-svg-icons'
+import logo from "../assets/Lensroom-1.png"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Footer = () => {
   return (
-    <div className="lg:h-[60vh] md:h-[80vh]  bg-black text-slate-50 flex flex-col items-center">
+    <div className="lg:h-[60vh] md:h-auto  bg-black text-slate-50 flex flex-col items-center">
       <div className="flex flex-col md:flex-row justify-center md:space-x-28 pt-10 border-b-2 pb-10 w-[90vw] border-slate-50 bg-black text-slate-50 ">
         <div>
           <h1 className="lg:text-8xl md:text-6xl text-3xl text-orange-500 font-extrabold">Join Our <br /> Community</h1>
@@ -25,9 +26,10 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex flex-col space-y-2 md:flex-row justify-around w-[90vw] pt-5 md:pt-10">
+      <div className="flex flex-col  space-y-2 md:flex-row justify-around w-[90vw] pt-5 md:pt-10">
         <div>
-            <h1 className="lg:text-4xl text-2xl text-orange-500 font-semibold">Lightroom</h1>
+          <img src={logo} alt="" className="lg:h-10 h-8 md:h-5" />
+            {/* <h1 className="lg:text-4xl text-2xl text-orange-500 font-semibold">Lensroom</h1> */}
         </div>
         <div className="flex justify-around md:space-x-5 lg:space-x-12 text-xl lg:text-4xl">
             <a href="#"><FontAwesomeIcon icon={faInstagram} /></a>
@@ -36,7 +38,7 @@ const Footer = () => {
             <a href="#"><FontAwesomeIcon icon={faGoogle} /></a>
         </div>
         <div>
-            <h1 className="lg:text-lg">&copy;2024 Lightroom.All Rights Reserved</h1>
+            <h1 className="lg:text-lg">&copy;2024 Lensroom.All Rights Reserved</h1>
         </div>
 
       </div>

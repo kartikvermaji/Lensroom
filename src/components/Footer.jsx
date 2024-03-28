@@ -7,13 +7,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Footer = () => {
   return (
-    <div className="lg:h-[60vh] md:h-auto  bg-black text-slate-50 flex flex-col items-center">
-      <div className="flex flex-col md:flex-row justify-center md:space-x-28 pt-10 border-b-2 pb-10 w-[90vw] border-slate-50 bg-black text-slate-50 ">
+    <div className="lg:h-[54vh] md:h-auto  bg-black text-slate-50 flex flex-col items-center">
+      <div className="flex flex-col md:flex-row justify-center md:space-x-8 pt-10 border-b-2 pb-20 w-[90vw] border-slate-50 bg-black text-slate-50 ">
         <div>
           <h1 className="lg:text-8xl md:text-6xl text-3xl text-orange-500 font-extrabold">Join Our <br /> Community</h1>
         </div>
-        <div >
-          <p className="md:text-lg textsm font-thin">
+        <div  >
+          <p className="md:text-lg textsm font-thin md">
             Want to know more about the latest info from our 
             product? Want to get special discount from us? Or  want to
             meet new people who have same interest in  photos and
@@ -26,12 +26,12 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex flex-col  space-y-2 md:flex-row justify-around w-[90vw] pt-5 md:pt-10">
+      <div className="flex flex-col  space-y-2 md:flex-row justify-around w-[100vw] pt-5 md:pt-4">
         <div>
-          <img src={logo} alt="" className="lg:h-10 h-8 md:h-5" />
+          <img src={logo} alt="" className="lg:h-6 mt-2 h-8 md:h-5" />
             {/* <h1 className="lg:text-4xl text-2xl text-orange-500 font-semibold">Lensroom</h1> */}
         </div>
-        <div className="flex justify-around md:space-x-5 lg:space-x-12 text-xl lg:text-4xl">
+        <div className="flex justify-around md:space-x-5 lg:space-x-12 text-xl lg:text-2xl">
             <a href="#"><FontAwesomeIcon icon={faInstagram} /></a>
             <a href="#"><FontAwesomeIcon icon={faFacebook} /></a>
             <a href="#"><FontAwesomeIcon icon={faXTwitter} /></a>

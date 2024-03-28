@@ -10,23 +10,28 @@ import Query from './Query'
 import Testimonials from './Testimonials'
 import Categories from './Categories'
 import Why from './Why'
+import Serv from './Serv'
+import Nav2 from '../components/Nav2'
+
 
 
 
 const Homepage = () => {
   return (
-    <div className='bg-slate-950 font-[Poppins]'>
+    <div className='bg-slate-50 font-[Poppins]'>
       <Hero/>
       <Why/>
       <Services/>
-      <Aboutus/>
+      {/* <Aboutus/> */}
       <Moto/>
       <Categories/>
-      <Testimonials/>
-      <Appp/>
+      {/* <Testimonials/> */}
+      {/* <Serv/> */}
+      {/* <Appp/> */}
       <Query/>
       <Footer/>
-      <Navbar/>
+      {/* <Navbar/> */}
+      <Nav2/>
     </div>
   )
 }

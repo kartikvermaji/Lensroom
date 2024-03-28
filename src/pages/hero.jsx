@@ -9,7 +9,7 @@ const Hero = () => {
   
     return (
     <div>
-      <div className='bg-slate-900 h-[100vh]'id='home' >
+      <div className='bg-slate-50 h-[100vh]'id='home' >
           
         <motion.img
            style={{ scale }}

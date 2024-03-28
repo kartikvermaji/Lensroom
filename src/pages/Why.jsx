@@ -2,6 +2,10 @@ import React from 'react'
 import im1 from "../assets/camman.png"
 import im2 from "../assets/camman2.png"
 import { motion } from 'framer-motion'
+import {
+  faArrowRight,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Why = () => {
   return (
@@ -18,7 +22,7 @@ const Why = () => {
           transition: { delay: 0, duration:.5 },
         }}
         viewport={{ once:true, amount: 0.5 }}
-         src={im2} alt="" className='h-[60vh] lg:h-[80vh] absolute blur-sm mt-5 lg:mt-[-15vh]' />
+         src={im2} alt="" className='h-[60vh] lg:h-[85vh] lg:w-[40vw]  absolute blur-sm mt-5 lg:mt-[-15vh]' />
         <motion.div
         initial={{ opacity: 0, scale:1,y:100 }}
         whileInView={{
@@ -28,12 +32,12 @@ const Why = () => {
           transition: { delay:0.15, duration:.5 },
         }}
         viewport={{ once:true, amount: 0.5 }}
-         className='bg-black relative lg:w-[45vw] md:w-[50vw] md:h-[50vh] w-[90vw] h-[55vh]  lg:h-[50vh] text-slate-50  lg:p-5 md:px-5 lg:px-14 mt-10 md:mt-auto'>
+         className='bg-black relative lg:w-[45vw] md:w-[50vw] md:h-[50vh] w-[90vw] h-[55vh]  lg:h-[50vh] text-slate-50 lg:mt-12  lg:p-5 md:px-5 lg:px-14 mt-10 md:mt-10'>
             <h1 className='font-[Poppins] lg:text-6xl text-3xl font-semibold w-[30vw] pt-6 pl-6 lg:pt-0 md:pl-0 md:mt-6'>WHY LENSROOM</h1>
             <p className='pl-6  lg:pt-0 md:pl-0 mt-2 lg:mt-4 w-[80vw] md:w-[40vw]  lg:w-[30vw]'>We have the right photographer for your next photoshoot.
 Choose from our widespread network of photographers
 that match your requirements perfectly.</p>
-<button className='bg-slate-50 text-black lg:text-lg lg:mt-5 mt-2 ml-6 md:ml-auto px-3 py-1  lg:px-4 lg:py-2 font-semibold rounded-full '>EXPLORE NOW</button>
+<button className="md:text-xl ml-[15vw] md:ml-[0vw]  mt-5 lg:mt-5 md:mt-2 border-2  px-7 py-1 lg:px-8 lg:py-2 rounded-full font-extralight hover:bg-slate-50 hover:shadow-xl hover:shadow-slate-400 hover:border-slate-50 hover:text-slate-950 duration-200">Get Started <FontAwesomeIcon icon={faArrowRight} className="bg-orange-500 rounded-full px-2 mt-[-0.3rem] rotate-[-20deg]  ml-[1rem] text-xl py-2 absolute hover:shadow-xl hover:shadow-slate-400" /></button>
         </motion.div>
       
 

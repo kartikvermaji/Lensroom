@@ -16,9 +16,33 @@ const Hero = () => {
          src={herocam} alt="" className='h-[100vh] w-[100vw] object-cover absolute' />
     
      <div className='text-slate-50 flex flex-col  relative text-center items-center pt-40 md:pt-40 lg:pt-60'>
-      <img src={logo} alt="" className='h-[5vh] md:h-[10vh] mt-10 ' />
-     <p className='md:text-4xl text-lg p-2  mt-5 font-extralight tracking-wide font-[Poppins]'>NEXT-GENERATION PHOTOGRAPHY SERVICE</p>
-     <button className='md:text-xl font-semibold bg-slate-100 mt-5  md:mt-10 hover:bg-orange-500 hover:text-slate-50 duration-300 text-slate-800 md:px-5 px-3 py-1 md:py-2 rounded-full hover:shadow-xl hover:shadow-slate-500'>Book Online</button>
+      <motion.img
+      initial={{ opacity: 0,y:100 }}
+      whileInView={{
+        opacity: 1,
+        y:0,
+        transition: { delay: 0, duration:1 },
+      }}
+      viewport={{ once:true, amount: 0.5 }}
+       src={logo} alt="" className='h-[5vh] md:h-[10vh] mt-10 ' />
+     <motion.p
+     initial={{ opacity: 0,y:100 }}
+     whileInView={{
+       opacity: 1,
+       y:0,
+       transition: { delay: 0.15, duration:1 },
+     }}
+     viewport={{ once:true, amount: 0.5 }}
+      className='md:text-4xl text-lg p-2  mt-5 font-extralight tracking-wide font-[Poppins]'>NEXT-GENERATION PHOTOGRAPHY SERVICE</motion.p>
+     <motion.button
+     initial={{ opacity: 0,y:100 }}
+     whileInView={{
+       opacity: 1,
+       y:0,
+       transition: { delay: 0.25, duration:.75 },
+     }}
+     viewport={{ once:true, amount: 0.5 }}
+      className='md:text-xl font-semibold bg-slate-100 mt-5  md:mt-10 hover:bg-orange-500 hover:text-slate-50 duration-300 text-slate-800 md:px-5 px-3 py-1 md:py-2 rounded-full hover:shadow-xl hover:shadow-slate-500'>Book Online</motion.button>
      <p className='md:text-3xl text-lg text-slate-100 font-extrabold mt-28 md:mt-24 '>|| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;| &nbsp;&nbsp;||&nbsp;&nbsp;||&nbsp;&nbsp;|</p>
      </div>
     </div>

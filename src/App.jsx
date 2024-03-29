@@ -1,7 +1,8 @@
-
 import { BrowserRouter, Navigate, Routes, Route, Router } from "react-router-dom";
-import Contact from "./pages/Contact"
 import Homepage from "./pages/Homepage";
+import Community from "./pages/Community";
+import Service from "./pages/Service";
+import About from "./pages/About";
 
 export default function App() {
   return (
@@ -9,7 +10,9 @@ export default function App() {
       <BrowserRouter>
       <Routes>
         <Route path="/" element={<Homepage/> }/>
-        <Route path="/Contact" element={<Contact/>}/>
+        <Route path="/about" element={<About/> }/>
+        <Route path="/services" element={<Service/> }/>
+        <Route path="/community" element={<Community/>}/>
       </Routes>
       </BrowserRouter>
     </div>

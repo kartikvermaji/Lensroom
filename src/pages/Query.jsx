@@ -9,14 +9,13 @@ const Page2 = () => {
     <div  id="contact" className="bg-black  text-slate-50 pt-20 md:space-x-5 l flex justify-center items-centermd:pt-10 md:p-3 md:pt-20  lg:p-20 h-[90vh] md:h-[100vh]">
       <div>
         <motion.img
-      initial={{ opacity: 0, scale:0.6,y:100 }}
-      whileInView={{
-        opacity: 1,
-        scale: 1,
-        y:0,
-        transition: { delay: 0, duration:.5 },
-      }}
-      viewport={{ once:true, amount: 0.5 }}
+     initial={{ opacity: 0,y:150 }}
+     whileInView={{
+       opacity: 1,
+       y:0,
+       transition: { delay: 0, duration:1 },
+     }}
+     viewport={{ once:true, amount: 0.5 }}
           src={ps}
           alt=""
           className=" hidden md:block lg:mt-0 h-[80vh]  lg:h-[75vh] lg:w-[40vw] w-[45vw] lg:ml-[-5vw]  object-cover rounded-2xl hover:shadow-2xl hover:shadow-slate-500 duration-200"

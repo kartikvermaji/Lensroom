@@ -19,7 +19,7 @@ const Categories = () => {
           y:0,
           transition: { delay: 0, duration:.5 },
         }}
-        viewport={{ once:true, amount: 0.5 }} className='md:text-6xl text-3xl font-semibold mt-28'>CHOOSE BY CATEGORY</motion.h1>
+        viewport={{ once:true, amount: 0.5 }} className='md:text-6xl text-3xl text-center font-semibold mt-28'>CHOOSE BY CATEGORY</motion.h1>
 
 
         <div className='flex justify-around  mt-5'>
@@ -37,7 +37,7 @@ const Categories = () => {
               }}
               viewport={{ once:true, amount: 0.5 }} className='relative text-slate-950 flex flex-col justify-center items-center space-y-1 md:space-y-4'>
                 <img src={im2} alt="" className='lg:h-[40vh] h-[20vh]  object-cover rounded-full' />
-                <p className='lg:text-4xl md:text-xl text-center w-[30vw] md:w-[15vw]'>PRODUCT PHOTOGRAPHY</p>
+                <p className='lg:text-lg md:text-xl text-center w-[30vw] md:w-[15vw]'>PRODUCT PHOTOGRAPHY</p>
             </motion.div>
 
 
@@ -51,7 +51,7 @@ const Categories = () => {
             }}
             viewport={{ once:true, amount: 0.5 }}className='relative text-slate-950 flex flex-col justify-center items-center space-y-1 md:space-y-4'>
                 <img src={im3} alt="" className='lg:h-[40vh] h-[20vh]  object-cover rounded-full' />
-                <p className='lg:text-4xl md:text-xl text-center w-[30vw] md:w-[15vw]'>FOOD PHOTOGRAPHY</p>
+                <p className='lg:text-lg md:text-xl text-center w-[30vw] md:w-[10vw]'>FOOD PHOTOGRAPHY</p>
             </motion.div>
 
               </div>
@@ -67,7 +67,7 @@ const Categories = () => {
               }}
               viewport={{ once:true, amount: 0.5 }} className='relative text-slate-950 flex flex-col justify-center items-center space-y-1 md:space-y-4'>
                 <img src={im4} alt="" className='lg:h-[40vh] h-[20vh]  object-cover rounded-full' />
-                <p className='lg:text-4xl md:text-xl text-center w-[30vw] md:w-[15vw]'>EVENT PHOTOGRAPHY</p>
+                <p className='lg:text-lg md:text-xl text-center w-[30vw] md:w-[10vw]'>EVENT PHOTOGRAPHY</p>
             </motion.div>
 
              <motion.div
@@ -80,7 +80,7 @@ const Categories = () => {
              }}
              viewport={{ once:true, amount: 0.5 }} className='relative text-slate-950 flex flex-col justify-center items-center space-y-1 md:space-y-4'>
                 <img src={im5} alt="" className='lg:h-[40vh] h-[20vh]  object-cover rounded-full' />
-                <p className='lg:text-4xl md:text-xl text-center w-[30vw] md:w-[15vw]'>REAL ESTATE PHOTOGRAPHY</p>
+                <p className='lg:text-lg   md:text-xl text-center w-[30vw] md:w-[15vw]'>REAL ESTATE PHOTOGRAPHY</p>
             </motion.div>
 
               </div>

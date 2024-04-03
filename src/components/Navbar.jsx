@@ -1,53 +1,55 @@
-import React, { useState } from 'react'
-import {faImage,faBars,faXmark} from "@fortawesome/free-solid-svg-icons";
+import React, { useState } from "react";
+import { faImage, faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import logo from "../assets/lensroom logo black.png"
-import { Link } from "react-router-dom";
+import logo from "../assets/lensroom logo black.png";
+import { Link, useLocation } from "react-router-dom";
 
-const Navbar = () => {
-  const[open,setOpen]=useState(false)
+const Nav2 = () => {
+  const location = useLocation();
   return (
-    <div className=' flex justify-around items-center   '>
-    <div className=' bg-slate-50 flex p-2 fixed top-8 md:top-0 justify-around text-center w-[100vw] md:w-[90vw] text-xl mt-4  md:mt-6 rounded-full text-black '>
-      <div>
-        <a href="#home"><img src={logo} alt="" className='lg:ml-28 md:ml-16 lg:h-12 h-8 ' /></a> 
+    <div>
+      <div className="flex justify-between lg:py-1 px-2 md:px-16 items-center fixed top-0 bg-slate-50 w-[100vw]">
+        <div>
+          <a href="/">
+            {" "}
+            <img src={logo} alt="" className="h-14  md:h-12" />
+          </a>
+        </div>
+        <div className="lg:text-lg md:text-xl text-sm space-x-2 md:space-x-10 lg:space-x-24 items-center justify-center text-gray-900">
+          <a
+            href="/about"
+            className={`hover:text-gray-400 duration-200 ${
+              location.pathname === "/about"
+                ? "border-b-2 pb-2 border-black"
+                : ""
+            }`}
+          >
+            ABOUT
+          </a>
+          <a
+            href="/services"
+            className={`hover:text-gray-400 duration-200 ${
+              location.pathname === "/services"
+                ? "border-b-2 pb-2 border-black"
+                : ""
+            }`}
+          >
+            SERVICES
+          </a>
+          <a
+            href="/community"
+            className={`hover:text-gray-400 duration-200 ${
+              location.pathname === "/community"
+                ? "border-b-2 pb-2 border-black"
+                : ""
+            }`}
+          >
+            COMMUNITY
+          </a>
+        </div>
       </div>
-
-      <div className='lg:space-x-10 space-x-5 font-normal pt-1 md:block hidden text-sm md:pt-2 lg:text-xl'> 
-        <a href="#home" className='hover:text-slate-400 duration-200'>Home</a>
-        <a href="#services" className='hover:text-slate-400 duration-200'>Services</a>
-        <a href="#category" className='hover:text-slate-400 duration-200'>Categories</a> 
-        <a href="#contact" className='hover:text-slate-400 duration-200'>Contact Us</a>
-      </div>
-
-      <div className='md:block hidden pt-1'>
-        <button className='border-2 px-3 text-sm lg:text-xl  lg:px-5 py-1 rounded-full border-black hover:bg-black hover:text-slate-50  duration-200'>Book</button>
-      </div>
-
-      <div>
-        <button className="md:hidden" onClick={()=>setOpen(true)} >
-        <FontAwesomeIcon icon={faBars} />
-        </button>
-        {open && (<div className="">
-            
-            <div className="flex flex-col fixed top-[15vh] left-[20vw] z-999 p-10 text-xl text-center text-slate-700 bg-slate-200 rounded-lg">
-            <div><button className="text-xl text-slate-800  hover:text-slate-400 hover:drop-shadow-xl sticky top-5"onClick={()=>{setOpen(!open)}} ><FontAwesomeIcon icon={faXmark} /></button></div>
-        <a href="#home" className="p-3 hover:text-slate-400 hover:drop-shadow-xl">Home</a>
-        <a href="#services"  className="p-3 hover:text-slate-400 hover:drop-shadow-xl ">Services</a>
-        <a href="#category" className="p-3 hover:text-slate-400 hover:drop-shadow-xl ">Categories</a>
-        <Link to="#contact"> <p className="p-3 hover:text-slate-400 hover:drop-shadow-xl ">Contact Us</p></Link>
-        <a href="#experience"  className="p-3 hover:text-slate-400 mt-4 border-2 border-slate-700 rounded-full hover:drop-shadow-xl ">Book Online</a>
-       
-
-      </div>
-        </div>)}
-      </div>
-
-
-
     </div>
-    </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Nav2;

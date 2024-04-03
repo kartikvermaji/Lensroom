@@ -33,7 +33,7 @@ const Services = () => {
           }}
           viewport={{ once:true, amount: 0.5 }}
            className='flex flex-col justify-center items-center '>
-                        <p className='lg:text-2xl text-sm w-[60vw] border-2 md:w-[26vw]  lg:w-[21vw] py-2 rounded-full hover:bg-slate-50 hover:text-black duration-200 hover:shadow-lg hover:shadow-slate-600  items-center text-center absolute mt-36   lg:mt-56'>INSTANT PHOTOGRAPHER</p>
+                        <p className='lg:text-lg text-sm w-[60vw] border-2 md:w-[26vw]  lg:w-[21vw] py-2 rounded-full hover:bg-slate-50 hover:text-black duration-200 hover:shadow-lg hover:shadow-slate-600  items-center text-center absolute mt-36   lg:mt-52'>INSTANT PHOTOGRAPHER</p>
             <img src={pg1} alt="" className='lg:h-[46vh] h-[36vh] rounded-[8vh]  hover:shadow-2xl hover:shadow-slate-700' />
 
           </motion.div>
@@ -48,7 +48,7 @@ const Services = () => {
           }}
           viewport={{ once:true, amount: 0.5 }}
            className='flex flex-col justify-center items-center '>
-                        <p className='lg:text-2xl text-sm w-[60vw] border-2 md:w-[26vw]  lg:w-[21vw] py-2 rounded-full hover:bg-slate-50 hover:text-black duration-200 hover:shadow-lg hover:shadow-slate-600  items-center text-center absolute mt-36   lg:mt-56'>SCHEDULE A PHOTOGRAPHER</p>
+                        <p className='lg:text-lg text-sm w-[60vw] border-2 md:w-[26vw]  lg:w-[21vw] py-2 rounded-full hover:bg-slate-50 hover:text-black duration-200 hover:shadow-lg hover:shadow-slate-600  items-center text-center absolute mt-36   lg:mt-52'>SCHEDULE A PHOTOGRAPHER</p>
             <img src={pg2} alt="" className='lg:h-[46vh]  h-[36vh] rounded-[8vh]  hover:shadow-2xl hover:shadow-slate-700' />
 
           </motion.div>
@@ -62,7 +62,7 @@ const Services = () => {
           }}
           viewport={{ once:true, amount: 0.5 }}
            className='flex flex-col justify-center items-center '>
-                        <p className='lg:text-2xl text-sm w-[60vw] border-2 md:w-[26vw]  lg:w-[21vw] py-2 rounded-full hover:bg-slate-50 hover:text-black duration-200 hover:shadow-lg hover:shadow-slate-600  items-center text-center absolute mt-36   lg:mt-56'>PRINTING SERVICE</p>
+                        <p className='lg:text-lg text-sm w-[60vw] border-2 md:w-[26vw]  lg:w-[21vw] py-2 rounded-full hover:bg-slate-50 hover:text-black duration-200 hover:shadow-lg hover:shadow-slate-600  items-center text-center absolute mt-36   lg:mt-52'>PRINTING SERVICE</p>
             <img src={ppg} alt="" className='lg:h-[46vh] h-[36vh] rounded-[8vh]  hover:shadow-2xl hover:shadow-slate-700' />
 
           </motion.div>

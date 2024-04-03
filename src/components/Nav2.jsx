@@ -9,9 +9,9 @@ const Nav2 = () => {
   return (
     <div>
       <div className='flex justify-between lg:py-1 px-2 md:px-16 items-center fixed top-0 bg-slate-50 w-[100vw]'>
-<div><a href="/">  <img src={logo} alt="" className='h-14  md:h-20' /></a>
+<div><a href="/">  <img src={logo} alt="" className='h-14  md:h-12' /></a>
  </div>
-<div className='lg:text-2xl md:text-xl text-sm space-x-2 md:space-x-10 lg:space-x-28 items-center justify-center text-gray-900'>
+<div className='lg:text-lg md:text-xl text-sm space-x-2 md:space-x-10 lg:space-x-24 items-center justify-center text-gray-900'>
     <a href="/about"className={`hover:text-gray-400 duration-200 ${
                 location.pathname === '/about' ? 'border-b-2 pb-2 border-black' : ''
               }`}>ABOUT</a>

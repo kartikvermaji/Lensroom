@@ -20,17 +20,15 @@ const Homepage = () => {
   return (
     <div className='bg-slate-50 font-[Poppins]'>
       <Hero/>
+      <div>
+        
+      </div>
       <Why/>
-      <Services/>
-      {/* <Aboutus/> */}
+      <Services/>    
       <Moto/>
       <Categories/>
-      {/* <Testimonials/> */}
-      {/* <Serv/> */}
-      {/* <Appp/> */}
       <Query/>
       <Footer/>
-      {/* <Navbar/> */}
       <Nav2/>
     </div>
   )

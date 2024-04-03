@@ -26,7 +26,7 @@ is easier now!</h1>
         <p className="font-semibold lg:text-lg lg:font-extralight  md:text-sm text-sm text-center ml-[-4vw] w-[90vw] md:text-left  md:w-[44vw] lg:w-[34vw] mt-5 md:mt-10 lg:mt-0">Choose the photographer that suits your budget, category,
 location and style. We've made it flexible and convenient
 like never before for any need and occasion.</p>
-          <button className="md:text-xl ml-[15vw] md:ml-[0vw]  mt-5 lg:mt-5 md:mt-5 border-2 px-8 py-2 rounded-full font-extralight hover:bg-slate-50 hover:shadow-xl hover:shadow-slate-400 hover:border-slate-50 hover:text-slate-950 duration-200">Get Started <FontAwesomeIcon icon={faArrowRight} className="bg-orange-500 rounded-full px-2 mt-[-0.3rem] rotate-[-20deg]  ml-[1rem] text-xl py-2 absolute hover:shadow-xl hover:shadow-slate-400" /></button>
+          <button className="md:text-xl ml-[15vw] md:ml-[0vw]  mt-5 lg:mt-5 md:mt-5 border-2 border-black px-8 py-2 rounded-full font-extralight hover:bg-slate-50 hover:shadow-xl hover:shadow-slate-400 hover:border-slate-50 hover:text-slate-950 duration-200">Get Started <FontAwesomeIcon icon={faArrowRight} className="bg-orange-500 rounded-full px-2 mt-[-0.3rem] rotate-[-20deg]  ml-[1rem] text-xl py-2 absolute hover:shadow-xl hover:shadow-slate-400" /></button>
         </div>
         
       </motion.div>

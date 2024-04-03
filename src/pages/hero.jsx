@@ -2,6 +2,7 @@ import React, { useRef } from 'react'
 import herocam from "../assets/heroimg.jpg"
 import logo from "../assets/Lensroom-1.png"
 import { motion, useTransform, useViewportScroll } from "framer-motion";
+import Navbar from "../components/Navbar"
 
 const Hero = () => {
   const { scrollYProgress } = useViewportScroll()
@@ -15,7 +16,7 @@ const Hero = () => {
            style={{ scale }}
          src={herocam} alt="" className='h-[100vh] w-[100vw] object-cover absolute' />
     
-     <div className='text-slate-50 flex flex-col  relative text-center items-center pt-40 md:pt-40 lg:pt-60'>
+     <div className='text-slate-50 flex flex-col  relative text-center items-center pt-40 md:pt-40 lg:pt-54'>
       <motion.img
       initial={{ opacity: 0,y:100 }}
       whileInView={{
@@ -42,11 +43,11 @@ const Hero = () => {
        transition: { delay: 0.25, duration:.75 },
      }}
      viewport={{ once:true, amount: 0.5 }}
-      className='md:text-xl font-semibold bg-slate-100 mt-5  md:mt-10 hover:bg-orange-500 hover:text-slate-50 duration-300 text-slate-800 md:px-5 px-3 py-1 md:py-2 rounded-full hover:shadow-xl hover:shadow-slate-500'>Book Online</motion.button>
-     <p className='md:text-3xl text-lg text-slate-100 font-extrabold mt-28 md:mt-24 '>|| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;| &nbsp;&nbsp;||&nbsp;&nbsp;||&nbsp;&nbsp;|</p>
+      className='md:text-xl font-semibold bg-slate-100 mt-5  md:mt-10 hover:bg-slate-950 hover:text-slate-50 duration-300 text-slate-800 md:px-5 px-3 py-1 md:py-2 rounded-full hover:shadow-2xl hover:shadow-slate-50'>Book Online</motion.button>
+    
      </div>
     </div>
-    
+    <Navbar/>
     </div>
   )
 }
